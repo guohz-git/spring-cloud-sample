@@ -9,3 +9,24 @@ ognl  -x  3 '@com.pamirs.pradar.maxplanck.module.agent.shared.service.CutoffConf
 
 trace com.pamirs.pradar.maxplanck.module.agent.shared.service.CutoffConfiguration getConfigInvoker -n 5 '1==1'
 /api/link/guard/guardmanage?current=0&pageSize=1024&applicationName=%s
+
+
+import com.huawei.it.cec.tc.order.fulfillment.infra.provider.dto.cic.SkuResponse;
+import com.alibaba.fastjson.JSON;
+
+String str="{\n"+"\"product_sku_id\":\"automate_sp1\",\n"+"\"sku_type_code\":\"0\",\n"
++"\"list\":[{\n"+"\"one_level_code\":\"1001\",\n"
++"\"two_level_code\":\"1001018M\",\n"+"\"sku_type_code\":\"0\",\n"
++"\"sku_code\":\"automate_sp1\",\n"+"\"sku_name\":\"自动化测试实物商品1\",\n"
++"\"ean_code\":\"automate_ean1\",\n"+"\"spart_code\":\"automate_sp1\",\n"
++"\"source_code\":\"1\",\n"+"\"purchase_type\":2,\n"
++"\"product_type\":10,\n"+"\"battery_flag\":\"1\",\n"
++"\"type_code\":\"1\",\n"+"\"authorized_price\":100,\n"
++"\"optional_price\":0,\n"+"\"package_price\":0,\n"
++"\"retail_price\":100,\n"+"\"tax_code\":\"automate_tax\",\n"
++"\"battery_model\":\"automate_battery\",\n"+"\"battery_report\":\"0\",\n"
++"\"is_integration\":\"0\",\n"+"\"is_magnetic\":\"10\",\n"
++"\"is_write_off\":\"2\",\n"+"\"software_name\":\"华为终端智能设备人机交互通信软件V2.0\",\n"
++"\"is_install\":\"1\",\n"+"\"is_invoice\":\"0\"\n"+"}]\n"+"}";
+SkuResponse object= JSON.parseObject(str,SkuResponse.class);
+return object;
