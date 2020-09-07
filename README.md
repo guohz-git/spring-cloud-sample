@@ -33,7 +33,8 @@ return object;
 
 
 
-
+String str = "{ \"product_sku_id\": \"automate_sp1\", \"sku_type_code\": \"0\", \"sku_basic_detail_responses\": [ { \"one_level_code\": \"1001\", \"two_level_code\": \"1001018M\", \"sku_type_code\": \"0\", \"sku_code\": \"automate_sp1\", \"sku_name\": \"自动化测试实物商品1\", \"ean_code\": \"automate_ean1\", \"spart_code\": \"automate_sp1\", \"source_code\": \"1\", \"purchase_type\": 2, \"product_type\": 10, \"battery_flag\": \"1\", \"type_code\": \"1\", \"authorized_price\": 100, \"optional_price\": 0, \"package_price\": 0, \"retail_price\": 100, \"tax_code\": \"automate_tax\", \"battery_model\": \"automate_battery\", \"battery_report\": \"0\", \"is_integration\": \"0\", \"is_magnetic\": \"10\", \"is_write_off\": \"2\", \"software_name\": \"华为终端智能设备人机交互通信软件V2.0\", \"is_install\": \"1\", \"is_invoice\": \"0\" }] }";
+        Map object = JSON.parseObject(str, Map.class);
 
 
 
