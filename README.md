@@ -40,7 +40,7 @@ String str = "{ \"product_sku_id\": \"automate_sp1\", \"sku_type_code\": \"0\", 
 
 
 
-
+ognl  -x  3 '@com.pamirs.pradar.maxplanck.module.agent.shared.service.Arbiter@linkGuardClazzMap'
 
 
 
